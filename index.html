@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Title</title>
+</head>
+<body>
+<div id='root'></div>
+
+<script type='module'>
+  import Component1 from './component-1.js';
+  import Component2 from './component-2.js';
+  import Component3 from './component-3.js';
+
+  const cmp1 = new Component1();
+  const cmp2 = new Component2();
+  const cmp3 = new Component3();
+
+  root.append(cmp1.element);
+  root.append(cmp2.element);
+  root.append(cmp3.element);
+</script>
+</body>
+</html>
